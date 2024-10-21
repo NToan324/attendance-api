@@ -4,13 +4,8 @@ const router = require("./routes/index.route");
 const bodyParser = require("body-parser");
 const cors = require("cors");
 
-// app.use(cors({ credentials: true, origin: true }));
-app.use(
-  cors({
-    origin: "*", // Thay thế bằng URL của frontend
-    credentials: true,
-  })
-);
+app.use(cors({ credentials: true, origin: true }));
+
 //init router
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
