@@ -7,7 +7,7 @@ const cors = require("cors");
 // app.use(cors({ credentials: true, origin: true }));
 app.use(
   cors({
-    origin: "https://attendance-api-app.vercel.app", // Thay thế bằng URL của frontend
+    origin: "*", // Thay thế bằng URL của frontend
     credentials: true,
   })
 );
